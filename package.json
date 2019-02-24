@@ -1,0 +1,39 @@
+{
+  "name": "ProjectTwo",
+  "version": "1.0.0",
+  "description": "In this activity we will add the provided boilerplate to group project repos.",
+  "main": "server.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "chai": "^4.2.0",
+    "dotenv": "^6.2.0",
+    "eslint": "^5.13.0",
+    "eslint-config-prettier": "^4.0.0",
+    "eslint-plugin-prettier": "^3.0.1",
+    "express": "^4.16.4",
+    "mocha": "^5.2.0",
+    "mysql2": "^1.6.4",
+    "node-spotify-api": "^1.0.7",
+    "path": "^0.12.7",
+    "prettier": "^1.16.4",
+    "sequelize": "^4.42.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "mocha",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SarahMAmann/ProjectTwo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SarahMAmann/ProjectTwo/issues"
+  },
+  "homepage": "https://github.com/SarahMAmann/ProjectTwo#readme"
+}
