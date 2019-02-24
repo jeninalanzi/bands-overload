@@ -19,14 +19,13 @@ module.exports = function(app) {
     res.sendFile(path.join(__dirname, "../public/cms.html"));
   });
 
-  
   // About Page for the creators (us!) route
   app.get("/about", function(req, res) {
     res.sendFile(path.join(__dirname, "../public/about.html"));
   });
 
-   // About Page for the creators (us!) route
-   app.get("/signup", function(req, res) {
+  // About Page for the creators (us!) route
+  app.get("/signup", function(req, res) {
     res.sendFile(path.join(__dirname, "../public/signup.html"));
   });
 };
