@@ -11,7 +11,7 @@ module.exports = function(app) {
 
   // Blog routes to the index (index.html)
   app.get("/blog", function(req, res) {
-    res.sendFile(path.join(__dirname, "../public/blog.html"));
+    res.sendFile(path.join(__dirname, "../public/index.html"));
   });
 
   // CMS  (content management system / post) route

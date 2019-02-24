@@ -7,6 +7,7 @@ $(document).ready(function() {
   var titleInput = $("#post-title");
   var reviewInput = $("#review-body");
   var authorName = $("#author-name");
+  var reviewImage = $("#image-url");
 
   // Parts of the URL that come after the "?"
   var url = window.location.search;
@@ -44,7 +45,8 @@ $(document).ready(function() {
       artist: artistName.val().trim(),
       song: songTitle.val().trim(),
       genre: genre.val().trim(),
-      author: authorName.val().trim()
+      author: authorName.val().trim(),
+      image: reviewImage.val().trim()
     };
 
     console.log(newReview);
@@ -76,6 +78,9 @@ $(document).ready(function() {
         artistName.val(data.artist);
         songTitle.val(data.song);
         genre.val(data.genre);
+        authorName.val(data.author);
+        reviewImage.val(data.image);
+
         // If a review with this id exists, set a flag that "updates" the review
         // when you hit submit
         updating = true;
@@ -90,7 +95,7 @@ $(document).ready(function() {
       url: "/api/reviews",
       data: review
     }).then(function() {
-      window.location.href = "/blog";
+      window.location.href = "/";
     });
   }
 });
